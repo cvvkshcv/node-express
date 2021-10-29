@@ -2,9 +2,11 @@ const express = require('express');
 const cors = require('cors')
 const userRoute = require('./routes/user');
 const todoRoute = require('./routes/todo');
+const authRoute = require('./routes/auth');
 const app = express();
 const PORT = 4444;
 const pool = require('./db-connection');
+app.use(express.json())
 
 app.use(cors());
 
@@ -15,6 +17,7 @@ app.get('/', async (req, res) => {
 });
 app.use('/user', userRoute);
 app.use('/todo', todoRoute);
+app.use('/auth', authRoute);
 
 app.listen(PORT, () => {
   console.log(`Listening to port ${PORT}`);
