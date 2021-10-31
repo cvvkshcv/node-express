@@ -134,3 +134,6 @@ Mongoose:
   - So we need to add `npm start` in package.json
   - Add "engine" property in package.json and give verions by checking `npm -v`
   - Need to add file to github before deploying
+
+  - `heroku create`
+  - `git push heroku main`

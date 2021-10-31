@@ -30,3 +30,7 @@ x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTdlOTI5YmRhZTk5Z
 
 POST http://localhost:3000/auth/me HTTP/1.1
 x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTdlOTI5YmRhZTk5ZmZjNzViMWFmNjMiLCJuYW1lIjoiVmlrYXNoIiwiZW1haWwiOiJjdnZrc2hjdkBnbWFpbC5jb20iLCJpYXQiOjE2MzU2OTQwNjh9.OjBq1JJe7OJJbuJARohnGYXiYHe8H-DvA3ZnY5w3-o8
+
+
+###
+POST https://howling-spider-97300.herokuapp.com/auth/me HTTP/1.1
