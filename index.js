@@ -5,14 +5,13 @@ const mongoose = require('mongoose');
 const authRouter = require('./routes/auth');
 const protectedRouter = require('./routes/protected');
 const { jwtDecode } = require('./utils/jwt-verify');
-
 const app = express();
 
 if (process.env.NODE_ENV === "production") {
   require('./prod')(app);
 }
 
-mongoose.connect('mongodb+srv://resume-user:iEv9qki77tzhPJBr@cluster0.ikjil.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect('mongodb://localhost/uigems')
   .then(() => console.log('Connect to MongoDB...'))
   .catch((e) => console.log(e));
 
