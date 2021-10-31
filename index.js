@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const authRouter = require('./routes/auth');
 const protectedRouter = require('./routes/protected');
 const { jwtDecode } = require('./utils/jwt-verify');
+
 const app = express();
 
 if (process.env.NODE_ENV === "production") {
