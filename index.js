@@ -7,6 +7,10 @@ const protectedRouter = require('./routes/protected');
 const { jwtDecode } = require('./utils/jwt-verify');
 const app = express();
 
+if (process.env.NODE_ENV === "production") {
+  require('./prod')(app);
+}
+
 mongoose.connect('mongodb://localhost/uigems')
   .then(() => console.log('Connect to MongoDB...'))
   .catch((e) => console.log(e));

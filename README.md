@@ -125,3 +125,12 @@ Mongoose:
 [ ] create middleware for encode and verify
 [ ] Logout - should be in client side
 
+[ ] For deployment we need to preapre our application
+  - `npm i helmet` (to avoid web vulnerabilities)
+  - `npm i compression` (compress http response)
+[ ] deploy in heroku (Download heroku cli and install)
+  - Login to heroku using `heroku login`
+  - once we deploy heroku will start app by `npm start` command
+  - So we need to add `npm start` in package.json
+  - Add "engine" property in package.json and give verions by checking `npm -v`
+  - Need to add file to github before deploying
