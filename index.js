@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === "production") {
   require('./prod')(app);
 }
 
-mongoose.connect('mongodb://localhost/uigems')
+mongoose.connect('mongodb+srv://resume-user:iEv9qki77tzhPJBr@cluster0.ikjil.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
   .then(() => console.log('Connect to MongoDB...'))
   .catch((e) => console.log(e));
 
