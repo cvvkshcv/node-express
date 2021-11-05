@@ -27,7 +27,7 @@ router.post('/login', async (req, res) => {
 
     user = pick(user, ['_id', 'name', 'email']);
     const token = jwtEncode(user);
-    return res.header('x-auth-token', token).send(user);
+    return res.json({...user, token });
   } catch (_err) {
     return res.status(400).send(_err);
   }
