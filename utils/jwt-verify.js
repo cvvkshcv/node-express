@@ -6,6 +6,9 @@ const jwtDecode = function(req, res, next) {
   if (!token) return res.status(401).send('Access denied');
   try {
     const decoded = jwt.decode(token, config.get('jwtPrivateKey'));
+    if (!decoded) {
+      return res.status(401).send('Access denied');
+    }
     req.user = decoded;
     next();
   } catch (error) {
