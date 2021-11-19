@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === "production") {
   require('./prod')(app);
 }
 
-mongoose.connect('mongodb://localhost/uigems')
+mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost/uigems')
   .then(() => console.log('Connect to MongoDB...'))
   .catch((e) => console.log(e));
 
