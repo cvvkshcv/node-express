@@ -26,6 +26,6 @@ app.use(express.json());
 app.use('/auth', authRouter);
 app.use('/protected', jwtDecode, protectedRouter);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log('App is running in port 3000');
 });
