@@ -23,9 +23,12 @@ if (!config.get('jwtPrivateKey')) {
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => res.send('Working in heroku!'));
+
 app.use('/auth', authRouter);
 app.use('/protected', jwtDecode, protectedRouter);
+const PORT = process.env.PORT || 3000;
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log('App is running in port 3000');
+app.listen(PORT, () => {
+  console.log(`App is running in port ${PORT}`);
 });
