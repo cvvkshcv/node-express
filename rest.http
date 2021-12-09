@@ -1,8 +1,8 @@
-GET http://localhost:3000 HTTP/1.1
+GET https://howling-spider-97300.herokuapp.com/ HTTP/1.1
 
 ###
 
-POST http://localhost:3000/auth/login HTTP/1.1
+POST https://howling-spider-97300.herokuapp.com/auth/login HTTP/1.1
 Content-Type: application/json
 
 {
@@ -12,7 +12,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3000/auth/register HTTP/1.1
+POST https://howling-spider-97300.herokuapp.com/auth/register HTTP/1.1
 Content-Type: application/json
 
 {
@@ -23,12 +23,12 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/protected HTTP/1.1
-x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTdlOTI5YmRhZTk5ZmZjNzViMWFmNjMiLCJuYW1lIjoiVmlrYXNoIiwiZW1haWwiOiJjdnZrc2hjdkBnbWFpbC5jb20iLCJpYXQiOjE2MzU2OTQwNjh9.OjBq1JJe7OJJbuJARohnGYXiYHe8H-DvA3ZnY5w3-o8
+GET https://howling-spider-97300.herokuapp.com/protected HTTP/1.1
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTk4MGI3ODRhOWMxMzlkNGRlMTM3ZDgiLCJuYW1lIjoiVmlrYXNoIiwiZW1haWwiOiJjdnZrc2hjdkBnbWFpbC5jb20iLCJpYXQiOjE2MzczNTQzNjB9.D4SJJb3zUbhSHjcEYNIVghycUZ3NIyth3wl-LsBTdiQ
 
 ###
 
-POST http://localhost:3000/auth/me HTTP/1.1
+POST https://howling-spider-97300.herokuapp.com/auth/me HTTP/1.1
 x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTdlOTI5YmRhZTk5ZmZjNzViMWFmNjMiLCJuYW1lIjoiVmlrYXNoIiwiZW1haWwiOiJjdnZrc2hjdkBnbWFpbC5jb20iLCJpYXQiOjE2MzU2OTQwNjh9.OjBq1JJe7OJJbuJARohnGYXiYHe8H-DvA3ZnY5w3-o8
 
 
